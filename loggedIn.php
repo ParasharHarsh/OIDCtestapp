@@ -172,7 +172,7 @@ in order to receive an access_token
 	var clientID = "gbU8B24ZCDK1orqCL0CB99DY";
 	var clientSecret="h0zeiKcgv6Uxv3UeMPCXGlFNup6W1YJmIqpX9OPSLCPAfJWe-5PQTr-es-9P7hK_b72o-XbIiNTXknEKDIH6-A";
 	var code = '<?php echo $code ?>';
-	var url = "https://fidm.us1.gigya.com/oidc/op/v1.0/3_cQkWA59GszKEVKtE0704hqQMGhjNH99ZgJKSpVxonDSA5IE4mVsiPO32QQKPStMo/token?grant_type=authorization_code&code="+encodeURIComponent(code)+"&redirect_uri="+encodeURIComponent('http://localhost:8080/OIDC/loggedIn.php');
+	var url = "https://fidm.us1.gigya.com/oidc/op/v1.0/3_cQkWA59GszKEVKtE0704hqQMGhjNH99ZgJKSpVxonDSA5IE4mVsiPO32QQKPStMo/token?grant_type=authorization_code&code="+encodeURIComponent(code)+"&redirect_uri="+encodeURIComponent('https://secure-lowlands-67656.herokuapp.com/loggedIn.php');
 	
 	console.log("URL",url);
 				const response = await fetch(url, {
